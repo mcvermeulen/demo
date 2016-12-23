@@ -4,8 +4,8 @@
     angular.module('meetingsapp')
         .service('MeetingsService',  MeetingsService);
 
-    MeetingsService.$inject = ['$http'];
-    function MeetingsService($http) {
+    MeetingsService.$inject = ['$http', '$log'];
+    function MeetingsService($http, $log) {
         var service = {
             getMeetings: getMeetings,
             getMeeting: getMeeting
@@ -19,7 +19,7 @@
                     return response.data;
                 })
                 .catch(function(error) {
-                    console.log(error);
+                    $log.error(error);
                 });
         }
 
@@ -29,7 +29,7 @@
                     return response.data;
                 })
                 .catch(function(error) {
-                    console.log(error);
+                    $log.error(error);
                 });
         }
     }
