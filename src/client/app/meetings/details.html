@@ -1,0 +1,14 @@
+<h3>Meeting details!</h3>
+<dl class="dl-horizontal">
+    <dt>Name</dt><dd>{{md.meeting.title}}</dd>
+    <dt>Location</dt><dd>{{md.meeting.location}}</dd>
+    <dt>Date</dt><dd>{{md.meeting.date}}</dd>
+    <dt>Items</dt>
+    <dd>
+        <ul>
+            <li ng-repeat="item in md.meeting.items">{{ item.name }}</li>
+        </ul>
+    </dd>
+</dl>
+
+<button ui-sref="meetings">Close</button>

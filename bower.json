@@ -1,0 +1,31 @@
+{
+  "name": "ui-router-demo",
+  "authors": [
+    "Marcel <vermeulen.mc@gmail.com>"
+  ],
+  "description": "ui-router demo",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "misc033.nl",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.0",
+    "angular-ui-router": "^0.3.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css"
+      ]
+    }
+  }
+}
